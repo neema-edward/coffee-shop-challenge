@@ -3,10 +3,9 @@ class Coffee:
         self.name = name
         if not isinstance (name, str):
             print("Must be a string!")
-            return
         
         if len(name) < 3:
-            print("Should be atleast 3 characters long!")
-            return
-# coffee1 = Coffee("Mo")
-# print(coffee1.name)
+            raise TypeError("Should be atleast 3 characters long!")
+        
+coffee1 = Coffee("Mocha")
+print(coffee1.name)

@@ -13,7 +13,7 @@ class Coffee:
     
     def orders(self):
         coffee_orders = []
-        for order in Order.all_orders:
+        for order in order.all_orders:
             if order.coffee == self:
                 coffee_orders.append(order)
         return coffee_orders

@@ -2,10 +2,10 @@ class Coffee:
     def __init__(self, name):
 
         if not isinstance (name, str):
-            print("Must be a string!")
+            raise TypeError("Must be a string!")
         
         if len(name) < 3:
-            raise TypeError("Should be atleast 3 characters long!")
+            raise ValueError("Should be atleast 3 characters long!")
         self._name = name
     @property
     def name(self):
@@ -39,4 +39,7 @@ class Coffee:
     
 coffee1 = Coffee("Latte")
 print(coffee1.name)
+
+
+
 

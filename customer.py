@@ -9,4 +9,7 @@ class Customer:
             print("Number should be 1 to 15 characters long!")
             return
         
+# customer1 = Customer("Neema")
+# print(customer1.name)
+        
         

@@ -12,7 +12,7 @@ class Order:
         
     @property
     def name(self):
-        return self.coffee.upper()
+        return self.price
     
     @name.setter
     def name(self, new_coffee):
@@ -22,6 +22,6 @@ class Order:
             raise ValueError("Not a string!!")
     
 order = Order("Neema", "Mocha", 7.8)
-print(order.coffee)
-order.coffee = "Cappucino"
-print(order.coffee)
+print(order.price)
+order.price = "8.0"
+print(order.price)

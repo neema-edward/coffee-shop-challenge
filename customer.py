@@ -22,7 +22,7 @@ class Customer:
             raise TypeError("Name must be a string!")
         
 
-customer = Customer("Neema")
-print(customer.name)
+# customer = Customer("Neema")
+# print(customer.name)
         
 
